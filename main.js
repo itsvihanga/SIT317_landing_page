@@ -24,13 +24,13 @@ function renderProgress() {
 document.addEventListener("DOMContentLoaded", renderProgress);
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Tooltip initialization
+ 
   const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
   tooltipTriggerList.forEach(tooltipTriggerEl => {
     new bootstrap.Tooltip(tooltipTriggerEl);
   });
 
-  // Initial render of progress ring
+  
   renderProgress();
 });
 
